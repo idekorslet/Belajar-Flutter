@@ -55,7 +55,7 @@ class Helper {
       price = _allData[i]['price'].toString();
       index = _categoryText.indexOf(category);
 
-      // jika kategori tidak ditemukan maka input index ke list _kategoriIndex
+      // jika kategori tidak ditemukan maka input kategori baru ke list
       if (index < 0) {
         currentIndex += _categoryText.length + 1;
         _categoryText.add(category);
