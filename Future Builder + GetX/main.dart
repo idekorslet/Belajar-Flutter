@@ -42,7 +42,7 @@ class MyApp extends StatelessWidget {
               children: [
                 SizedBox(
                   height: 40,
-                  /// list view daftar toko / seller
+                  /// list view daftar kategori
                   child: ListView.builder(
                     scrollDirection: Axis.horizontal,
                     shrinkWrap: true,
@@ -52,7 +52,6 @@ class MyApp extends StatelessWidget {
                         GestureDetector(
                           child: Container(
                             margin: const EdgeInsets.only(left: 2.0, right: 2.0, top: 4.0),
-                            // child: textButtonSeller(index),
                             child: TextButton(
                               onPressed: () {
                                 index == 0 ? print(helper.allData) : helper.filterDataByCategory(index-1);
@@ -68,7 +67,6 @@ class MyApp extends StatelessWidget {
                                 )
                               ),
                               child: Text(
-                                // " Toko ${(index + 1)} ",
                                 helper.categoryList[index],
                                 style: const TextStyle(fontWeight: FontWeight.bold),
                                 textAlign: TextAlign.center
