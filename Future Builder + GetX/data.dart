@@ -45,7 +45,6 @@ class Helper {
     String price = '';
     int index;
     int currentIndex = -1;
-    // final List<int> _categoryIndex = [];
 
     _categoryText = [];
     _productByCategoryIndex = [];
@@ -59,7 +58,6 @@ class Helper {
       // jika kategori tidak ditemukan maka input index ke list _kategoriIndex
       if (index < 0) {
         currentIndex += _categoryText.length + 1;
-        // _categoryIndex.add(currentIndex);
         _categoryText.add(category);
       } else {
         currentIndex = index;
