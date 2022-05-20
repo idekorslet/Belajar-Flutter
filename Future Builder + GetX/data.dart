@@ -16,9 +16,9 @@ class Helper {
   }
 
   Future loadData({required String apiUrl}) async {
+    var client = http.Client();
     try {
-      final uri = Uri.parse(apiUrl);
-      var client = http.Client();
+      final uri = Uri.parse(apiUrl);      
       var response = await client.get(uri);
 
       if (response.statusCode == 200) {
@@ -26,10 +26,13 @@ class Helper {
         _allData = List<Map>.from(json.decode(response.body));
         return _allData;
       } else {
-        throw Exception('Shomething wrong: ${response.statusCode}');
+        throw Exception('Something wrong: ${response.statusCode}');
       }
     } catch (e) {
       print('Loading data error: $e}');
+    }
+    finally {
+      client.close();
     }
   }
 
