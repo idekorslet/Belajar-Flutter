@@ -99,8 +99,7 @@ class MyApp extends StatelessWidget {
         itemCount: helper.categoryList.length,
         itemBuilder: (context, index) {
           return
-            GestureDetector(
-              child: Container(
+            Container(
                 margin: const EdgeInsets.only(left: 2.0, right: 2.0, top: 4.0),
                 child: TextButton(
                   onPressed: () {
@@ -122,8 +121,7 @@ class MyApp extends StatelessWidget {
                       textAlign: TextAlign.center
                   ),
                 ),
-              ),
-            );
+              );
         });
   }
 
