@@ -49,31 +49,30 @@ class MyApp extends StatelessWidget {
                     itemCount: helper.categoryList.length,
                     itemBuilder: (context, index) {
                       return
-                        GestureDetector(
-                          child: Container(
-                            margin: const EdgeInsets.only(left: 2.0, right: 2.0, top: 4.0),
-                            child: TextButton(
-                              onPressed: () {
-                                index == 0 ? print(helper.allData) : helper.filterDataByCategory(index-1);
-                              },
-                              style: ButtonStyle(
-                                padding: MaterialStateProperty.all<EdgeInsets>(const EdgeInsets.all(10)),
-                                foregroundColor: MaterialStateProperty.all<Color>(Colors.blue),
-                                shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                                  RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(18.0),
-                                      side: const BorderSide(color: Colors.blue)
-                                  )
+                       Container(
+                          margin: const EdgeInsets.only(left: 2.0, right: 2.0, top: 4.0),
+                          child: TextButton(
+                            onPressed: () {
+                              index == 0 ? print(helper.allData) : helper.filterDataByCategory(index-1);
+                            },
+                            style: ButtonStyle(
+                              padding: MaterialStateProperty.all<EdgeInsets>(const EdgeInsets.all(10)),
+                              foregroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+                              shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                                RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(18.0),
+                                    side: const BorderSide(color: Colors.blue)
                                 )
-                              ),
-                              child: Text(
-                                helper.categoryList[index],
-                                style: const TextStyle(fontWeight: FontWeight.bold),
-                                textAlign: TextAlign.center
-                              ),
+                              )
+                            ),
+                            child: Text(
+                              helper.categoryList[index],
+                              style: const TextStyle(fontWeight: FontWeight.bold),
+                              textAlign: TextAlign.center
                             ),
                           ),
                         );
+                        
                     }),
                 ),
                 const Divider(
