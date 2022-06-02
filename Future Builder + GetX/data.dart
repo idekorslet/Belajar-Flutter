@@ -16,6 +16,7 @@ class Helper {
   }
 
   Future loadData({required String apiUrl}) async {
+    _allData = [];
     var client = http.Client();
     try {
       final uri = Uri.parse(apiUrl);      
