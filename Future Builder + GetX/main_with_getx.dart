@@ -38,15 +38,15 @@ class MyApp extends StatelessWidget {
           );
         }
         else if (!snapshot.hasError) {
-          if (snapshot.hasData) {
+          if (snapshot.hasData && snapshot.data.isNotEmpty) {
             dataController.getxProductList.value = snapshot.data;
             return Obx(() {
               return viewProductList(helper, dataController.getxProductList);
             });
 
-          } else {
-            return const Text("DATA KOSONG");
-          }
+          } 
+          
+          return const Text("DATA KOSONG");
         }
         else {
           // print('Snapshot error: ' + snapshot.error.toString());
