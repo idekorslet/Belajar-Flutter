@@ -109,7 +109,8 @@ class MyApp extends StatelessWidget {
                     catIndex = helper.categoryList.indexOf(helper.categoryList[index]);
                     dataController.reloadDataByCategory(helper, index-1);
                   },
-                  style: index == catIndex ? WidgetHelper().btnCategoryStyle(true) : WidgetHelper().btnCategoryStyle(false),
+//                   style: index == catIndex ? WidgetHelper().btnCategoryStyle(true) : WidgetHelper().btnCategoryStyle(false),
+                  style: WidgetHelper().btnCategoryStyle(index == catIndex ? true : false),
                   child: Text(
                       helper.categoryList[index],
                       style: const TextStyle(fontWeight: FontWeight.bold),
