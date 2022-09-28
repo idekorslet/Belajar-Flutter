@@ -1,4 +1,4 @@
-<b>referensi:</b>
+<h2><b>referensi:</b></h2>
 1. https://stackoverflow.com/questions/70573686/how-to-make-tap-to-open-slidable-using-flutter-slidable-package <br>
 2. https://github.com/letsar/flutter_slidable/issues/167 <br>
 3. https://github.com/letsar/flutter_slidable/issues/31 <br>
