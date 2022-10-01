@@ -16,6 +16,8 @@ class ProductsView extends StatelessWidget {
               scrollDirection: Axis.vertical,
               shrinkWrap: true,
               itemBuilder: (context, index) {
+                // hapus SlidableAutoCloseBehavior yang membungkus ListView.Builder
+                // dan pindahkan kesini (bungkus widget slidable) jika ingin membuat multiple menu yang aktif
                 return Slidable(
                   key: UniqueKey(),
                   startActionPane: ActionPane(
@@ -77,7 +79,7 @@ class ProductsView extends StatelessWidget {
     );
   }
 
-  buildProductList(int index) {
+  LayoutBuilder buildProductList(int index) {
     return LayoutBuilder(
       builder: (layoutBuilderContext, constraints) {
         return ListTile(
