@@ -48,6 +48,12 @@ class _MyHomePageState extends State<MyHomePage> {
     super.initState();
     prodData = ProductData();
   }
+  
+  @override
+  void dispose() {
+    
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
