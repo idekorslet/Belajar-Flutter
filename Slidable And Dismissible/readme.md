@@ -6,3 +6,6 @@
 5. https://stackoverflow.com/questions/61475025/how-to-allow-only-one-slidable-at-a-time-to-be-open <br>
 6. https://stackoverflow.com/questions/12649573/how-do-you-build-a-singleton-in-dart <br>
 7. https://www.youtube.com/watch?v=81nbfr37oxg <br>
+
+<h2><b>Output:</b></h2>
+
