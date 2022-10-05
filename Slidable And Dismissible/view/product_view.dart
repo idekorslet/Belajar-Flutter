@@ -11,13 +11,14 @@ class ProductsView extends StatelessWidget {
       builder: (context, setState) {
         return SlidableAutoCloseBehavior(
           // closeWhenOpened: true,
-          child: ListView.builder(
+          child: 
+            prodData.getProductLength() <= 0
+            ? const Center(child: Text('No data', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),)
+            : ListView.builder(
               itemCount: prodData.getProductLength(),
               scrollDirection: Axis.vertical,
               shrinkWrap: true,
               itemBuilder: (context, index) {
-                // hapus SlidableAutoCloseBehavior yang membungkus ListView.Builder
-                // dan pindahkan kesini (bungkus widget slidable) jika ingin membuat multiple menu yang aktif
                 return Slidable(
                   key: UniqueKey(),
                   startActionPane: ActionPane(
