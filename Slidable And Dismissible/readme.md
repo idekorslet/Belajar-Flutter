@@ -10,7 +10,8 @@
 <h2><b>Output:</b></h2>
 <video src='https://user-images.githubusercontent.com/80518183/193956264-7ea65c7f-6174-48d0-8b10-0825a5b15ae6.mov' width=180/>
 
-
+<h2><b>Tutorial di youtube:</b></h2>
+https://youtu.be/zhh6N8E44eI
 
 
 
