@@ -1,6 +1,10 @@
 <h2>Cara membuat folder ataupun file di internal storage Android menggunakan Flutter.</h2>
 
-Package list:
+<h4>- Package list:</h4>
 1. path_provider: https://pub.dev/packages/path_provider
 2. permission_handler: https://pub.dev/packages/permission_handler
 3. screenshot: https://pub.dev/packages/screenshot
+
+<h4>- Script tambahan di AndroidManifest.xml</h4>
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+<uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
