@@ -5,6 +5,10 @@
 2. permission_handler: https://pub.dev/packages/permission_handler <br>
 3. screenshot: https://pub.dev/packages/screenshot
 
+<h4> Additional info </h4>
+Jika SDK target >= 29, tambahkan script berikut di file AndroidManifest.xml di dalam tag Application sebelum tag activity
+android:requestLegacyExternalStorage="true"
+
 <h4>- Tutorial di Youtube:</h4>
 https://youtu.be/kgz1CWhasps
 
