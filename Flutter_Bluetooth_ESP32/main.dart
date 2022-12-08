@@ -56,7 +56,8 @@ class BluetoothAppState extends State<BluetoothApp> {
   };
 
   // To track whether the device is still connected to Bluetooth
-  bool? get isConnected => connection?.isConnected;
+  // bool? get isConnected => connection?.isConnected;
+  bool? get isConnected => connection != null && connection!.isConnected;
 
   // Define some variables, which will be required later
   List<BluetoothDevice> _devicesList = [];
@@ -393,7 +394,8 @@ class BluetoothAppState extends State<BluetoothApp> {
     if (_device == null) {
       show('No device selected');
     } else {
-      if (connection == null || (connection != null && !isConnected!)) {
+      // if (connection == null || (connection != null && !isConnected!)) {
+      if (!isConnected!) {
         await BluetoothConnection.toAddress(_device?.address).then((conn) {
           debugPrint('Connected to the device');
           connection = conn;
