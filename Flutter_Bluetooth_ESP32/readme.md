@@ -1,3 +1,6 @@
+<h2>Projek ini berfungsi untuk mengirim sinyal 1 atau 0 ke ESP32 untuk menyalakan/mematikan LED melalui koneksi bluetooth menggunakan Flutter</h2>
+<h2>This project is used to send signal (1 or 0) to the ESP32 to turned LED on/off through bluetooth connection using Flutter</h2>
+
 <h3>- Kodingan asal diambil dari/Original source code from:</h3>
 1. https://blog.codemagic.io/creating-iot-based-flutter-app/<br>
 2. https://embeddednesia.com/v1/tutorial-esp32-dengan-arduino-ide-2-mengakses-bluetooth/
