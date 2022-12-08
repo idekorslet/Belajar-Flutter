@@ -5,9 +5,11 @@
 2. permission_handler: https://pub.dev/packages/permission_handler <br>
 3. screenshot: https://pub.dev/packages/screenshot
 
-<h4> Additional info </h4>
+<h4>- Additional info </h4>
 Jika SDK target >= 29, tambahkan script berikut di file AndroidManifest.xml di dalam tag Application sebelum tag activity
 android:requestLegacyExternalStorage="true"
+<br> <br>
+<img src="https://github.com/idekorslet/Belajar-Flutter/blob/main/create-folder-app-in-storage/sdk-target-higher-than-equal29.jpg"/>
 
 <h4>- Tutorial di Youtube:</h4>
 https://youtu.be/kgz1CWhasps
