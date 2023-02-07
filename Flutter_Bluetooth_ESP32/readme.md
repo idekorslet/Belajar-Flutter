@@ -15,3 +15,6 @@ update 1:<br>
 <br>
 update 2:<br>
 <img src="https://github.com/idekorslet/Belajar-Flutter/blob/main/Flutter_Bluetooth_ESP32/update2.jpg"/>
+
+Cek versi upgrade dari aplikasi ini / Please check the upgrade version of this app:
+https://github.com/idekorslet/Bluetooth-App
