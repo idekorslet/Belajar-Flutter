@@ -47,8 +47,8 @@ class _MyHomePageState extends State<MyHomePage> {
         itemBuilder: (context, index) {
           return GestureDetector(
             onTap: () {
-              // print('Switch no $index status is: ${switchList[index].getSwitchStatus()}');
-              print('Switch no $index status is: ${CustomAnimatedSwitch().getSwitchStatus()}');
+              print('Switch no $index status is: ${switchList[index].getSwitchStatus()}');
+              // print('Switch no $index status is: ${CustomAnimatedSwitch().getSwitchStatus()}');
             },
             child: Container(
               height: 80,
@@ -63,8 +63,8 @@ class _MyHomePageState extends State<MyHomePage> {
                   children: [
                     Text('Switch No#${index + 1}', style: const TextStyle(fontSize: 20),),
                     const Expanded(child: SizedBox()),
-                    CustomAnimatedSwitch()
-                    // switchList[index]
+                    // CustomAnimatedSwitch()
+                    switchList[index]
                   ],
                 ),
               )
