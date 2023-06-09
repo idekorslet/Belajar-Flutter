@@ -15,7 +15,7 @@ class _MyHomePageState extends State<MyHomePage> {
   int _minute = 0;
   String _errorText = '';
   final _textFieldMinuteController = TextEditingController();
-  int selectedNotifId = -1;
+//   int selectedNotifId = -1;
 
   @override
   void initState() {
@@ -164,7 +164,7 @@ class _MyHomePageState extends State<MyHomePage> {
   void onSelectTableRow({required int notifIndex}) {
     print('selected notif index: $notifIndex');
     final notifId = NotifDataController.notifDataList[notifIndex].notifId;
-    selectedNotifId = notifId;
+//     selectedNotifId = notifId;
     final dataToSend = NotifDataController.getSingleNotifData(notifId: notifId);
 
     Navigator.push(
