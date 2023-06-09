@@ -210,7 +210,7 @@ class _MyHomePageState extends State<MyHomePage> {
     NotifDataController.saveNotifDataIntoStorage();
 
     if (_minute == 0) {
-      NotificationController.createNewNotification(
+      await NotificationController.createNewNotification(
           notifId: notifId,
           title: 'Notif title for notif id: $notifId',
           body: 'This is notif body example',
@@ -222,7 +222,7 @@ class _MyHomePageState extends State<MyHomePage> {
           }
       );
     } else {
-      NotificationController.scheduleNewNotification(
+      await NotificationController.scheduleNewNotification(
           notifId: notifId,
           title: 'Notif title for notif id: $notifId',
           body: 'This is notif body example',
