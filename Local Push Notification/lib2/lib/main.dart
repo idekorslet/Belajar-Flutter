@@ -1,7 +1,5 @@
-import 'package:awesome_notifications/awesome_notifications.dart';
 import 'package:flutter/material.dart';
 import 'package:local_push_notification/routes.dart';
-
 import 'controllers/notification_controller.dart';
 
 Future<void> main() async {
